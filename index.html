@@ -9,19 +9,21 @@
       }
     </style>
     <script>
-      function handleSubmit(e) {
-        e.preventDefault()
-        window.open("https://duckduckgo.com/?q=" +
-          document.getElementById("vo-selector").value +
-          "+voor+" +
-          document.getElementById("search-target").value)
+      window.onload = function () {
+        document.getElementById('search-form').addEventListener('submit', function (e) {
+          e.preventDefault()
+          window.open('https://duckduckgo.com/?q=' +
+            document.getElementById('vo-selector').value +
+            '+voor+' +
+            document.getElementById('search-target').value)
+        })
       }
     </script>
   </head>
   <body>
     <h1>DuckDuckVo</h1>
     <h1>Privacy voor prominente studenten.</h1>
-    <form onsubmit="handleSubmit(event)">
+    <form id="search-form">
       <select id="vo-selector">
         <option value="vo">`Vo</option>
         <option value="anti-vo">Anti-`Vo</option>
