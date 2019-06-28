@@ -1,0 +1,23 @@
+{
+  "name": "duckduckvo",
+  "version": "0.1.1",
+  "description": "Source code for the DuckDuckVo webservice.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^12.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/projectspiral/duckduckvo.git"
+  },
+  "author": "Project Spiral",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/projectspiral/duckduckvo/issues"
+  },
+  "homepage": "https://duckduckvo.nl/"
+}
