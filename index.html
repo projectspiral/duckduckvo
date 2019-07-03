@@ -7,6 +7,12 @@
       body {
         text-align: center;
       }
+      .pizza {
+        position: fixed;
+        right: 0px;
+        bottom: 0px;
+        width: 100px;
+      }
     </style>
     <script>
       window.onload = function () {
@@ -17,10 +23,10 @@
             '+voor+' +
             document.getElementById('search-target').value)
         })
-      }
-
-      function pizzaTime() {
-        window.open("pizza.html");
+        document.getElementById('pizza').addEventListener('click', function (e) {
+          alert('Ter vervanging voor de hopeloos verouderde cookies, maakt DuckDuckVo gebruik van pizza\'s.')
+          window.open('pizza.html')
+        })
       }
     </script>
   </head>
@@ -37,7 +43,7 @@
       <input type="submit">
     </form>
 
-    <br><br>
-    <img src="https://dejpknyizje2n.cloudfront.net/marketplace/products/pizza-doodle-sticker-1542410700.1695497.png" onclick="pizzaTime()">
+    <img src="images/pizza.png" onclick="pizzaTime()" class="pizza" id="pizza"
+    alt="Ter vervanging voor de hopeloos verouderde cookies, maakt DuckDuckVo gebruik van pizza\'s.">
   </body>
 </html>
