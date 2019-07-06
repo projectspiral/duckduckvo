@@ -12,8 +12,8 @@ main {
 
 .pizza {
   position:fixed;
-  right:0px;
-  bottom:0px;
+  right:4px;
+  bottom:4px;
   width:100px;
 }
 
