@@ -22,4 +22,4 @@ cd $gitdir;
 git checkout master
 git pull
 
-cp -r images/ *.html $targetdir
+cp -r images/ scripts/ style/ *.html $targetdir
