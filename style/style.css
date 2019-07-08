@@ -1,0 +1,23 @@
+body {
+  text-align:center;
+  background-color:#F7F7F7;
+}
+
+main {
+  min-height:100%;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+}
+
+.pizza {
+  position:fixed;
+  right:4px;
+  bottom:4px;
+  width:100px;
+}
+
+#title {
+  padding-top: 1%;
+  padding-bottom: 3%;
+}

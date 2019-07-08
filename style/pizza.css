@@ -1,0 +1,6 @@
+body {
+    position:absolute;
+    top:25%;
+    left:35%;
+    background:center/cover url(../images/pizza-background.jpg);
+  }

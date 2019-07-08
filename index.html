@@ -3,47 +3,37 @@
   <head>
     <meta charset="UTF-8">
     <title>DuckDuckVo - Privacy voor prominente studenten.</title>
-    <style>
-      body {
-        text-align: center;
-      }
-      .pizza {
-        position: fixed;
-        right: 0px;
-        bottom: 0px;
-        width: 100px;
-      }
-    </style>
-    <script>
-      window.onload = function () {
-        document.getElementById('search-form').addEventListener('submit', function (e) {
-          e.preventDefault()
-          window.open('https://duckduckgo.com/?q=' +
-            document.getElementById('vo-selector').value +
-            '+voor+' +
-            document.getElementById('search-target').value)
-        })
-        document.getElementById('pizza').addEventListener('click', function (e) {
-          alert('Ter vervanging van hopeloos verouderde cookies, maakt DuckDuckVo gebruik van pizza\'s.')
-          window.open('pizza.html')
-        })
-      }
-    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    
+    <script src="scripts/search.js"></script>
+    <script src="https://kit.fontawesome.com/423e0ca86c.js"></script>
   </head>
   <body>
-    <h1>DuckDuckVo</h1>
-    <h1>Privacy voor prominente studenten.</h1>
-    <form id="search-form">
-      <select id="vo-selector">
-        <option value="vo">`Vo</option>
-        <option value="anti-vo">Anti-`Vo</option>
-      </select>
-       voor 
-      <input type="text" id="search-target">
-      <input type="submit">
-    </form>
+    <main> 
+      <div class="container"> 
+        <img src="images/logo.png">
+        <h1 id="title">DuckDuckVo</h1>
 
-    <img src="images/pizza.png" onclick="pizzaTime()" class="pizza" id="pizza"
-    alt="Ter vervanging van hopeloos verouderde cookies, maakt DuckDuckVo gebruik van pizza\'s.">
+        <div class="container"> 
+          <form class="input-group mb-3" id="search-form"> 
+            <div class="input-group-prepend"> 
+              <select class="input-group-text custom-select" id="vo-selector"> <option value="'vo" selected="">'Vo</option> <option value="anti-'vo">Anti-'Vo</option> </select> 
+              <span class="input-group-text">voor</span> 
+            </div> 
+            <input type="text" class="form-control" id="search-target" /> 
+            <div class="input-group-append"> 
+              <button class="input-group-text" type="submit"><i class="fas fa-search"></i></button> 
+            </div> 
+          </form> 
+        </div>
+
+        <h5>Privacy voor prominente studenten.</h5>
+
+        <img src="images/pizza.png" onclick="pizzaTime()" class="pizza" id="pizza"
+          alt="Ter vervanging van hopeloos verouderde cookies, maakt DuckDuckVo gebruik van pizza\'s.">
+      </div>
+    </main>
   </body>
 </html>
